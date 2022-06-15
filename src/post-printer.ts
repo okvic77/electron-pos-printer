@@ -53,7 +53,8 @@ export class PosPrinter {
                 show: !!options.preview,
                 webPreferences: {
                     nodeIntegration: true,        // For electron >= 4.0.0
-                    contextIsolation: false
+                    contextIsolation: false,
+                    enableRemoteModule: true,
                 }
             });
             // mainWindow
